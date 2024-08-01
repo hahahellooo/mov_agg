@@ -14,7 +14,7 @@ def merge(load_dt='20240724'):
     dw['load_dt'] = dw['load_dt'].astype('object')
     dw['multiMovieYn'] = dw['multiMovieYn'].astype('object')
     dw['repNationCd'] = dw['repNationCd'].astype('object')
-    print(df_where.dtypes)
+    print(dw.dtypes)
 
     # null 값 unknown으로 변환
     dw['multiMovieYn'] = dw['multiMovieYn'].fillna('unknown')
