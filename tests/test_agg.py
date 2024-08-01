@@ -4,4 +4,4 @@ def test_merge():
     df = merge()
     print("===============================")
     print(df)
-    assert df
+    assert len(df) > 0
